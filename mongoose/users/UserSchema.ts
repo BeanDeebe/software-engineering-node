@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Location from "../modules/Location";
+import Location from "../../models/users/Location";
 
 const UserSchema = new mongoose.Schema ({
     username: {type: String, required: true},

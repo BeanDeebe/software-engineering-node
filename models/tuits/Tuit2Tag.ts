@@ -1,4 +1,4 @@
-import Tuit from './tuits/Tuit';
+import Tuit from './Tuit';
 
 export default class Tuit2Tag {
     private tuit: Tuit|null = null;

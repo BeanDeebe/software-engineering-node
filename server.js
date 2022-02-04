@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/a1-db');
+mongoose.connect('mongodb+srv://beebed:<Patriots2020!>@cluster0.onmpj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 app.get('/hello', (req, res) =>
   res.send('Hello World!'));
 

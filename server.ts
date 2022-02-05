@@ -12,8 +12,11 @@ mongoose.connect("mongodb+srv://beebed:hello123@cluster0.onmpj.mongodb.net/Tuite
         console.log('Connection Failed' + err.message);
     })
 const app = express();
-app.use(bodyParser.json());
 app.use(express.json());
+app.get('/', (req: Request, res: Response) =>
+    res.send('Welcome!'));
+
+app.use(bodyParser.json());
 const userController = UserController.getInstance(app);
 const tuitController = TuitController.getInstance(app);
 const PORT = 4000;

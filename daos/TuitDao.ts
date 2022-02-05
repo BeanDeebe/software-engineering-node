@@ -3,6 +3,16 @@ import TuitModel from "../mongoose/tuits/TuitModel";
 import TuitDaoI from "../interfaces/TuitDaoI";
 
 export default class TuitDao implements TuitDaoI {
+    private static tuitDao: TuitDao | null = null;
+    public static getInstance=(): TuitDao => {
+        if(TuitDao.tuitDao === null) {
+            TuitDao.tuitDao = new TuitDao();
+        }
+        return TuitDao.tuitDao;
+    }
+
+    private constructor() {}
+
     async createTuit(tid: string, tuit: Tuit): Promise<void> {
         return await TuitModel.create(tuit);
     }

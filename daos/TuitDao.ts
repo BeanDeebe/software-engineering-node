@@ -13,7 +13,7 @@ export default class TuitDao implements TuitDaoI {
 
     private constructor() {}
 
-    async createTuit(tid: string, tuit: Tuit): Promise<void> {
+    async createTuitByUser(tid: string, tuit: Tuit): Promise<any> {
         return await TuitModel.create(tuit);
     }
 

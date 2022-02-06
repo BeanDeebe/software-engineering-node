@@ -42,6 +42,6 @@ export default class TuitController implements TuitControllerI {
             .then(status => res.send(status));
 
     updateTuit = (req: Request, res: Response) =>
-        TuitController.tuitDao.updateTuit(req.params.uid, req.body)
+        TuitController.tuitDao.updateTuit(req.params.tid, req.body)
             .then(status => res.send(status));
 }

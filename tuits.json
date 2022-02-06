@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "62000819c7ce27d03b611b4d"
+  },
+  "tuit": "In 2021, our @NASAPersevere Mars rover landed and our Ingenuity helicopter took flight. Two asteroid missions launched to the skies, and another began its journey home to Earth. A look back at highlights for our #NASAScience planetary missions: https://go.nasa.gov/32zX2fE",
+  "postedOn": {
+    "$date": "2022-02-06T17:33:53.749Z"
+  },
+  "postedBy": {
+    "$oid": "61fec67a228ece4de8e9987e"
+  }
+},{
+  "_id": {
+    "$oid": "62000cfe731eb0e87ad21247"
+  },
+  "tuit": "@SpaceX Dragon spacecraft returns to Earth with @ISS_Research that could help us better understand neurodegenerative diseases, gene expression, & muscle atrophy. Undocking from the @Space_Station is at 9:05am ET (13:05 UT). Watch:",
+  "postedOn": {
+    "$date": "2022-02-06T18:01:28.259Z"
+  },
+  "postedBy": {
+    "$oid": "61fec699228ece4de8e99880"
+  }
+}]

@@ -25,7 +25,7 @@ export default class TuitController implements TuitControllerI {
             .then((tuits: Tuit[]) => res.json(tuits));
 
     findTuitById = (req: Request, res: Response) =>
-        TuitController.tuitDao.findTuitById(req.params.uid)
+        TuitController.tuitDao.findTuitById(req.params.tid)
             .then((tuit:Tuit) => res.json(tuit));
 
     findTuitsByUser = (req: Request, res: Response) =>
@@ -42,6 +42,6 @@ export default class TuitController implements TuitControllerI {
             .then(status => res.send(status));
 
     updateTuit = (req: Request, res: Response) =>
-        TuitController.tuitDao.updateTuit(req.params.uid, req.body)
+        TuitController.tuitDao.updateTuit(req.params.tid, req.body)
             .then(status => res.send(status));
 }

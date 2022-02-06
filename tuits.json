@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "62003c6483f256ca5b613a44"
+  },
+  "tuit": "@SpaceX Dragon spacecraft returns to Earth with @ISS_Research that could help us better understand neurodegenerative diseases, gene expression, & muscle atrophy. Undocking from the @Space_Station is at 9:05am ET (13:05 UT). Watch:",
+  "postedOn": {
+    "$date": "2021-12-25T19:00:30.057Z"
+  },
+  "__v": 0,
+  "postedBy": {
+    "$oid": "61fec699228ece4de8e99880"
+  }
+},{
+  "_id": {
+    "$oid": "62003d2a83f256ca5b613a4d"
+  },
+  "tuit": "In 2021, our @NASAPersevere Mars rover landed and our Ingenuity helicopter took flight. Two asteroid missions launched to the skies, and another began its journey home to Earth. A look back at highlights for our #NASAScience planetary missions: https://go.nasa.gov/32zX2fE",
+  "postedOn": {
+    "$date": "2021-12-25T18:48:30.057Z"
+  },
+  "postedBy": {
+    "$oid": "61fec67a228ece4de8e9987e"
+  },
+  "__v": 0
+}]

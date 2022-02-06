@@ -4,9 +4,15 @@ import Tuit from "../../models/tuits/Tuit";
 
 
 const TuitSchema = new mongoose.Schema<Tuit> ({
-    tuit: {type: String, required: true},
+    tuit: {type: String, required: true, default:''},
     postedOn: {type: Date, default: Date.now()},
-    postedBy: {type: Schema.Types.ObjectId, ref:"UserModel"}
+    postedBy: {type: Schema.Types.ObjectId, ref:"UserModel", default:''}
 }, {collection: 'tuits'});
 
 export default TuitSchema;
+
+
+
+
+
+

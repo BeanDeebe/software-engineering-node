@@ -13,7 +13,7 @@ export default class TuitDao implements TuitDaoI {
 
     private constructor() {}
 
-    async createTuitByUser(tid: string, tuit: Tuit): Promise<any> {
+    async createTuitByUser(uid: string, tuit: Tuit): Promise<Tuit> {
         return await TuitModel.create(tuit);
     }
 
@@ -26,10 +26,11 @@ export default class TuitDao implements TuitDaoI {
     }
 
     async findTuitById(tid: string): Promise<any> {
-        return await TuitModel.findById(tid);
+        return TuitModel.findById(tid);
     }
 
-    async findTuitsByUser(uid: string): Promise<any> {
+    async findTuitsByUser(uid: string): Promise<Tuit[]> {
+        // @ts-ignore
         return await TuitModel.findById({_id: uid});
     }
 
